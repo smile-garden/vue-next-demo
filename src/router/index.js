@@ -20,6 +20,11 @@ const routes = [
     name: 'Test',
     component: () => import(/* webpackChunkName: "test" */ '../views/Test.vue'),
   },
+  {
+    path: '/lifecycle',
+    name: 'Lifecycle',
+    component: () => import(/* webpackChunkName: "lifecycle" */ '../views/Lifecycle.vue'),
+  },
 ];
 
 const router = createRouter({
