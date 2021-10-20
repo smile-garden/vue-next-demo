@@ -34,7 +34,7 @@ export default {
   },
   setup(props, context) {
     const { attrs, slots, emit } = context;
-    console.log(props, attrs, slots, emit);
+    console.log(props, attrs, slots, emit)
     const { user } = toRefs(props);
     console.log(user.value);
     const name = ref('我是name');
