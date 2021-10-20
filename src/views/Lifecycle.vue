@@ -26,7 +26,7 @@ export default {
     Render,
   },
   props: {
-    title: String,
+    title: String
     user: {
       type: String,
       default: '222222222222222'
