@@ -29,7 +29,7 @@ export default {
     title: String,
     user: {
       type: String,
-      default: '222222222222222',
+      default: '222222222222222'
     },
   },
   setup(props, context) {

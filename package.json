@@ -25,10 +25,10 @@
     "eslint": "^6.7.2",
     "eslint-plugin-import": "^2.20.2",
     "eslint-plugin-vue": "^7.0.0-alpha.0",
+    "husky": "^7.0.2",
     "less": "^3.0.4",
     "less-loader": "^5.0.0",
     "lint-staged": "^11.2.3",
-    "mrm": "^3.0.10",
     "vue-cli-plugin-vue-next": "~0.1.2"
   },
   "eslintConfig": {
@@ -47,8 +47,14 @@
       "no-console": "off"
     }
   },
+  "husky": {
+    "hook": {
+      "pre-commit": "yarn run lint-staged"
+    }
+  },
   "lint-staged": {
-    "*.{js,vue}": "eslint --cache --fix"
+    "**/*.js": "eslint --ext .js",
+    "**/*.vue": "eslint --ext .vue"
   },
   "browserslist": [
     "> 1%",
