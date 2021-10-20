@@ -53,8 +53,10 @@
     }
   },
   "lint-staged": {
-    "**/*.js": "eslint --ext .js",
-    "**/*.vue": "eslint --ext .vue"
+    "*.{js,vue}": [
+      "vue-cli-service lint",
+      "git add"
+    ]
   },
   "browserslist": [
     "> 1%",
