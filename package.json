@@ -27,6 +27,8 @@
     "eslint-plugin-vue": "^7.0.0-alpha.0",
     "less": "^3.0.4",
     "less-loader": "^5.0.0",
+    "lint-staged": "^11.2.3",
+    "mrm": "^3.0.10",
     "vue-cli-plugin-vue-next": "~0.1.2"
   },
   "eslintConfig": {
@@ -44,6 +46,9 @@
     "rules": {
       "no-console": "off"
     }
+  },
+  "lint-staged": {
+    "*.{js,vue}": "eslint --cache --fix"
   },
   "browserslist": [
     "> 1%",
